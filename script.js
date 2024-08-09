@@ -17,7 +17,7 @@ tempBtn.addEventListener('click',async function (){
             return
         }
         
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=8da088cbc47506a0e7fee692e9c03643`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${input.value}&appid=`);
         if(!response.ok){
        throw new Error('could not fetch resource')
         }
